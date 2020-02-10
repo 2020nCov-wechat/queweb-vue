@@ -6,6 +6,9 @@ body {
 .header-have-arrow{
     width: 100%;
 }
+.user{
+    padding-bottom: 60px;
+}
 .user.header-have-arrow.arrow{
     height: 30px ;
     position: absolute;

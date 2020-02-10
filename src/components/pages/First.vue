@@ -37,12 +37,12 @@
                     <div class='serviceList acea-row row-middle'>
 
                         <div class="suggess-css">
-                            <van-radio-group v-model="radio" bind:change="onChange">
+                            <van-radio-group v-model="radio" >
                                 <div class="answer-css">
-                                    <van-radio name="1" icon-size="28px" label-class="answertext">是的</van-radio>
+                                    <van-radio name="是的是的是的" icon-size="28px" label-class="answertext"  v-on:click="onChange('是的是的是的')">是的是的是的</van-radio>
                                 </div>
                                 <div class="answer-css">
-                                    <van-radio name="2" icon-size="28px" label-class="answertext">不是</van-radio>
+                                    <van-radio name="不是不是不是" icon-size="28px" label-class="answertext"  v-on:click="onChange('不是不是不是')">不是不是不是</van-radio>
                                 </div>
                             </van-radio-group>
                         </div>
@@ -59,7 +59,16 @@
 <script>
     export default {
         name: "first",
-        data
+        data(){
+            return{
+                radio:1
+            }
+        },
+        methods:{
+            onChange:function(data){
+                console.log(data)
+            }
+        }
     }
 </script>
 

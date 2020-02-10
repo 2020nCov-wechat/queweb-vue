@@ -65,6 +65,7 @@
         position: fixed;
         bottom: 0;
         left: 0;
+        height: 60px;
         width: 100%;
         padding-bottom: 5px;
         background: #fff;
