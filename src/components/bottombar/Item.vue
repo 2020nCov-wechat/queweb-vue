@@ -37,8 +37,11 @@
                 this.$router.push('../'+this.page);
                 this.$emit('change',this.page)
             }
-        }
-    }
+        },
+		created() {
+			this.$emit('change','pages/first')
+		}
+	}
 </script>
 <style type="text/css">
     .itemWarp{

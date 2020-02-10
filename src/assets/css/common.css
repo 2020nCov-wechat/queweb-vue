@@ -4,7 +4,7 @@ body {
 }
 
 .header-have-arrow{
-    width: 100%;
+    padding-bottom: 10px;
 }
 .user{
     padding-bottom: 60px;
@@ -14,7 +14,7 @@ body {
     position: absolute;
 }
 .user .header{
-    padding:20px 10px 20px 10px ;
+    padding:20px 10px 0px 10px ;
     position:relative;
 }
 .user .header:after { position: absolute;left: 0;right: 0;bottom: -98px ;z-index: -1;
@@ -87,7 +87,7 @@ body {
 .user .binding{padding: 2px 18px ; background-color: #ca1f10; border-radius: 50px;font-size: 22px ;border: 1px solid #e8695e;color: #ffffff;}
 
 .btn-css{
-    height: 100px ;
+    /*height: 100px ;*/
     display: flex;
     justify-content: center;
     padding: 20px 20px ;
@@ -133,7 +133,8 @@ view{box-sizing:border-box;}
     flex-direction: column;
 }
 .acea-row.row-between-wrapper{
-    align-items:center;
+    align-items:flex-start;
+    flex-direction: column;
 }
 .font-color{color:#fc4141!important;}
 .bg-color{background-color:#1296DB!important;}
@@ -201,9 +202,8 @@ button::after{border:0;}
     padding-bottom: 15px ;
 }
 .btn-bottom{
-    height: 100px ;
-    width: 100%;
-    padding: 20px ;
+    height: 40px ;
+    padding: 10px ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -225,14 +225,16 @@ button::after{border:0;}
     font-size: 20px;
 }
 .questionTitle{
-    font-size:36px ;
+    font-size:25px ;
     width: 100%;
 }
 .hellotext{
     font-size: 16px;
+    text-align: left;
 }
 .warn-text{
     font-size: 16px;
+    text-align: left;
 }
 .input-clsss{
     border: 1px solid;
