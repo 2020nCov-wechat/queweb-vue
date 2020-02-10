@@ -197,30 +197,31 @@
                     //--------
                     this.radio= dataMsg
                     console.log(this.answers)
-                    setTimeout(function () {
-                        if (this.questionShowIndex == this.questionNum - 2) {
-                            this.nextBtnText= "完成"
-                        }
-                        if (this.questionShowIndex == this.questionNum - 1) {
-                            //回答完毕
-                            console.log("finish")
-                            this.nextBtnText= "完成"
-                        } else {
-                            console.log(this.radio)
-                            //如果后面的回答过了，就显示后面的题目
-
-
-
-                            var ra = ''
-                            if (this.questionHadAns > this.questionShowIndex) {
-                                ra = this.answers[this.questionShowIndex + 1]
-                                console.log("ra::" + ra)
-                            }
-                            this.questionShow= this.questions[this.questionShowIndex + 1]
-                            this.questionShowIndex= this.questionShowIndex + 1
-                            this.radio= ra
-                        }
-                    }, 500)
+                    //对于h5,在选择上一题后，会自动刷新radio，同时也会触发一次onchange，此时就不要自动跳到下一题了，让用户自己选择下一题
+                    // setTimeout(function () {
+                    //     if (this.questionShowIndex == this.questionNum - 2) {
+                    //         this.nextBtnText= "完成"
+                    //     }
+                    //     if (this.questionShowIndex == this.questionNum - 1) {
+                    //         //回答完毕
+                    //         console.log("finish")
+                    //         this.nextBtnText= "完成"
+                    //     } else {
+                    //         console.log(this.radio)
+                    //         //如果后面的回答过了，就显示后面的题目
+                    //
+                    //
+                    //
+                    //         var ra = ''
+                    //         if (this.questionHadAns > this.questionShowIndex) {
+                    //             ra = this.answers[this.questionShowIndex + 1]
+                    //             console.log("ra::" + ra)
+                    //         }
+                    //         this.questionShow= this.questions[this.questionShowIndex + 1]
+                    //         this.questionShowIndex= this.questionShowIndex + 1
+                    //         this.radio= ra
+                    //     }
+                    // }, 500)
 
                     //---------
                 } else {
@@ -318,8 +319,8 @@
 
             //发送信息
             send: function (message) {
-                this.$router.push('/pages/doctornear')
                 console.log(message)
+                this.$router.push('/pages/doctornear')
                 // var urlNew = globalData.Url.submitInfoUrl
                 // this.$axios.get(urlNew, {
                 //     params: {
@@ -387,6 +388,9 @@
                 this.hideBottom()
                 this.onChange(value)
             },
+
+
+            //其他函数
             backClick: function () {
                 // var that = this;
                 // wx.showModal({

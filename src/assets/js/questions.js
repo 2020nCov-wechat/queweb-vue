@@ -1412,6 +1412,7 @@ var userinfos = {
 var doctornear = {
   "qNum": 14,
   "questions": [
+
     {
       "type": 6,
       "question": "11. 近一周居住城市",
