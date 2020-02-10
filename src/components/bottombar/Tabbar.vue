@@ -27,6 +27,12 @@
 
                     },
                     {
+                        txt:'干预',
+                        page:'pages/Intervene',
+                        normalImg:require('../../assets/imgs/bar/intervene1.png'),
+                        activeImg:require('../../assets/imgs/bar/intervene.png')
+                    },
+                    {
                         txt:'我的',
                         page:'pages/my',
                         normalImg:require('../../assets/imgs/bar/my1.png'),
