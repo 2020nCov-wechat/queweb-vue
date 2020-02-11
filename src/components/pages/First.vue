@@ -55,7 +55,6 @@
 
 
 <script>
-    import globalData from "../../assets/js/commom";
     export default {
         name: "first",
         data(){
@@ -106,7 +105,7 @@
             console.log(sessionkey)
             console.log(doctortype)
             if(openid == null || openid==""){
-                window.location.href =globalData.Url.wechatInitUrl
+                window.location.href =this.globalData.Url.wechatInitUrl
             }else{
                 // this.openid=openid
                 // this.sessionkey=sessionkey

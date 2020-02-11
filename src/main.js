@@ -55,11 +55,19 @@ var router = new VueRouter({
       }},
     { path: '/pages/userinfo', component: Userinfo },
     { path: '/pages/usernear', component: Usernear },
+<<<<<<< HEAD
     { path: '/pages/scale', component: Scale },
     { path: '/pages/servicedemand', component: ServiceDemand,
       meta: {
         title: '心理健康服务需求'
       }},
+=======
+    { path: '/pages/scale', component: Scale ,
+      meta: {
+        title: '量表'
+      }},
+    { path: '/pages/servicedemand', component: ServiceDemand },
+>>>>>>> 1a2b7be16d013b6c3c23f844fd2ee83327a89b44
     { path: '/pages/intervene', component: Intervene },
     { path: '/pages/videoplay', component: VideoPlay }
   ]
