@@ -55,6 +55,7 @@
 
 
 <script>
+    import globalData from "../../assets/js/commom";
     export default {
         name: "first",
         data(){
@@ -75,7 +76,44 @@
                 },500)
             },
 
+            GetUrlParam(paraName) {
+                var url = window.location.toString();
+                var arrObj = url.split("?");
+
+                if (arrObj.length > 1) {
+                    var arrPara = arrObj[1].split("&");
+                    var arr;
+
+                    for (var i = 0; i < arrPara.length; i++) {
+                        arr = arrPara[i].split("=");
+
+                        if (arr != null && arr[0] == paraName) {
+                            return arr[1];
+                        }
+                    }
+                    return "";
+                }
+                else {
+                    return "";
+                }
+            }
         },
+        created() {
+            var openid =  this.GetUrlParam('openid')
+            var sessionkey = this.GetUrlParam('sessionkey')
+            var doctortype = this.GetUrlParam('doctortype')
+            console.log(openid)
+            console.log(sessionkey)
+            console.log(doctortype)
+            if(openid == null || openid==""){
+                window.location.href =globalData.Url.wechatInitUrl
+            }else{
+                // this.openid=openid
+                // this.sessionkey=sessionkey
+                this.globalData.openid = openid
+                this.globalData.sessionkey = sessionkey
+            }
+        }
     }
 </script>
 
