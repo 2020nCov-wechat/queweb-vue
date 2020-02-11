@@ -344,10 +344,12 @@
                     session_key: newSession_key,
                     message: message
                 }).then(function (response) {
-                    console.log('成功');
                     console.log(response);
-                    that.$toast.success('提交成功！')
-                    that.$router.push('/pages/scale')
+                    if(response.status=="200"){
+                        console.log('成功');
+                        that.$toast.success('提交成功！')
+                        that.$router.push('/pages/scale')
+                    }
                 }).catch(function (error) {
                     console.log('失败');
                     console.log(error);
@@ -593,6 +595,17 @@
 
             //其他函数
             backClick: function () {
+                var that = this
+                this.$dialog.confirm({
+                    title: '退出答题',
+                    message: '确认要退出答题吗？'
+                }).then(() => {
+                    // on confirm
+                    that.$router.push('/pages/first')
+                }).catch(() => {
+                    // on cancel
+                    console.log('点击取消回调')
+                });
                 // var that = this;
                 // wx.showModal({
                 //     title: '退出答题',

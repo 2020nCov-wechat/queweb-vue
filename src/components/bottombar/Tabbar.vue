@@ -28,7 +28,7 @@
                     },
                     {
                         txt:'干预',
-                        page:'pages/Intervene',
+                        page:'pages/doctornear',
                         // page:'pages/scale',
                         normalImg:require('../../assets/imgs/bar/intervene1.png'),
                         activeImg:require('../../assets/imgs/bar/intervene.png')

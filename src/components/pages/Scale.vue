@@ -157,7 +157,7 @@ export default {
             } else if (this.curScaleIndex == 4) {
                 //结束
                 this.$toast.success('量表回答完毕')
-                this.$router.push('/pages/ServiceDemand')
+                this.$router.push('/pages/servicedemand')
             }
         },
         onChange: function (dataMsg) {
@@ -386,6 +386,17 @@ export default {
         },
         //其他函数
         backClick: function () {
+            var that = this
+            this.$dialog.confirm({
+                title: '退出答题',
+                message: '确认要退出答题吗？'
+            }).then(() => {
+                // on confirm
+                that.$router.push('/pages/first')
+            }).catch(() => {
+                // on cancel
+                console.log('点击取消回调')
+            });
             // var that = this;
             // wx.showModal({
             //     title: '退出答题',
