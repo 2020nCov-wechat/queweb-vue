@@ -92,15 +92,17 @@ export default {
       //     }
       // })
 
-      axios.get("http://jsonplaceholder.typicode.com/users").then(res => {
+      axios.get("https://jsonplaceholder.typicode.com/users").then(res => {
+          console.log(res.data);
         setTimeout(() => {
+            
           //未来让加载动画效果明显,这里加入了setTimeout,实现2s延时
           if (res != null) {
-            for (var i = 0; i < res.length; i++) {
-              names.push(res[i].name); //挨个取出类别并填入类别数组
+            for (var i = 0; i < res.data.length; i++) {
+              names.push(res.data[i].username); //挨个取出类别并填入类别数组
             }
-            for (var j = 0; j < res.length; j++) {
-              nums.push(res[j].id); //挨个取出销量并填入销量数组
+            for (var j = 0; j < res.data.length; j++) {
+              nums.push(res.data[j].id); //挨个取出销量并填入销量数组
             }
             myChart.hideLoading(); //隐藏加载动画
             myChart.setOption({
@@ -108,9 +110,12 @@ export default {
               xAxis: {
                 data: names
               },
-              yAxis: {
-                data: nums
-              }
+              yAxis: {},
+              series: [
+                {
+                  data: nums
+                }
+              ]
             });
           }
         }, 2000);
