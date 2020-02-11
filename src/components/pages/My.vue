@@ -163,7 +163,6 @@ export default {
         console.log(response);
         that.$toast.success('刷新成功！')
         if(response.status=="200"){
-
           var scaleResults = response.data.scaleResults
           setTimeout(() => {
             //未来让加载动画效果明显,这里加入了setTimeout,实现2s延时
@@ -184,13 +183,12 @@ export default {
                 }
               });
             }
-          }, 2000);
+          }, 500);
         }
       }).catch(function (error) {
         console.log('失败');
         console.log(error);
         that.$toast.success('刷新失败！请检查网络')
-        // that.send(message)
       });
       // axios.get("http://jsonplaceholder.typicode.com/users").then(res => {
       //   setTimeout(() => {
