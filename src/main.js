@@ -55,7 +55,10 @@ var router = new VueRouter({
       }},
     { path: '/pages/userinfo', component: Userinfo },
     { path: '/pages/usernear', component: Usernear },
-    { path: '/pages/scale', component: Scale },
+    { path: '/pages/scale', component: Scale ,
+      meta: {
+        title: '量表'
+      }},
     { path: '/pages/servicedemand', component: ServiceDemand },
     { path: '/pages/intervene', component: Intervene },
     { path: '/pages/videoplay', component: VideoPlay }

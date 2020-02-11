@@ -33,7 +33,7 @@
                     <div class="suggess-css">
                         <van-radio-group v-model="radio" v-on:change="onChange">
                             <div v-for="item in questionShow.answers" class="answer-css" v-bind:key="item.answer">
-                                <van-radio icon-size="28px" :name="item.answer" label-class="answertext">
+                                <van-radio icon-size="28px" :name="item.value" label-class="answertext">
                                     {{item.answer}}
                                 </van-radio>
                             </div>
@@ -156,13 +156,15 @@ export default {
                 this.radio = ''
             } else if (this.curScaleIndex == 4) {
                 //结束
+                this.$toast.success('量表回答完毕')
                 this.$router.push('/pages/ServiceDemand')
             }
         },
         onChange: function (dataMsg) {
             console.log("onchange")
             console.log(dataMsg)
-            if (dataMsg == "") {
+
+            if (dataMsg==null || dataMsg === "" ) {
                 console.log("空的")
                 return
             }
@@ -312,7 +314,44 @@ export default {
         sendAnswer: function (index) {
 
             console.log(index)
-            this.nextQuestionPage()
+            // this.$router.push('/pages/doctornear')
+
+            var urlNew = this.globalData.Url.submitScale
+            var newopenid = this.globalData.openid
+            var newSession_key = this.globalData.sessionkey
+            newSession_key = newSession_key.replace(/ +/g, '%2B')
+            newopenid = newopenid.replace(/ +/g, '%2B')
+            console.log('准备发送')
+            console.log(newopenid)
+            console.log(newSession_key)
+            console.log({
+                openid: newopenid,
+                session_key: newSession_key,
+                questionNaire: index,
+                answers: this.answers
+            })
+            var that = this
+            this.$axios.post(urlNew,{
+                openid: newopenid,
+                session_key: newSession_key,
+                questionNaire: index,
+                answers: that.answers
+            }).then(function (response) {
+                console.log('成功');
+                if(response.status=="200"){
+                    console.log(response.data);
+                    that.$toast.success('提交成功！')
+                    that.nextQuestionPage()
+                }
+            }).catch(function (error) {
+                console.log('失败');
+                console.log(error);
+                that.$toast.success('提交失败！请检查网络')
+                // that.send(message)
+            });
+
+
+
             // wx.request({
             //     //获取openid接口
             //     url: getApp().globalData.submitScale,
