@@ -81,7 +81,8 @@
 
 <script>
     import questionsOut from '../../assets/js/questions.js'
-    // import globalData from '../../assets/js/commom.js'
+    // import Qs from 'qs'
+
     export default {
         name: "doctorinfo",
         data(){
@@ -96,7 +97,7 @@
                 curScaleIndex: 3,//当前正在做的问卷序号
                 questionHadAns: 0,
                 questionShowIndex: 0,
-                questionNum: questionsOut.doctorinfos.qNum,
+                questionNum: questionsOut.userinfos.qNum,
                 questionShow: {
                     "question": "1.入睡困难，睡不安稳或睡眠过多",
                     "answers": [{
@@ -117,7 +118,7 @@
                         },
                     ]
                 },
-                questions: questionsOut.doctorinfos.questions,
+                questions: questionsOut.userinfos.questions,
                 answers: [],
                 nationOption: ["汉族",
                     "蒙古族",
@@ -320,23 +321,38 @@
             //发送信息
             send: function (message) {
                 console.log(message)
-                this.$router.push('/pages/doctornear')
-                // var urlNew = globalData.Url.submitInfoUrl
-                // this.$axios.get(urlNew, {
-                //     params: {
-                //         ID: 12345
-                //     }
-                // }).then(function (response) {
-                //         console.log(response);
-                // }).catch(function (error) {
-                //         console.log(error);
-                // });
-                //
-                // var newopenid = app.globalData.openid
-                // var newSession_key = app.globalData.session_key
-                // newSession_key = newSession_key.replace(/ +/g, '%2B')
-                // newopenid = newopenid.replace(/ +/g, '%2B')
+                // this.$router.push('/pages/doctornear')
+
+                var urlNew = this.globalData.Url.submitInfoUrl
+                var newopenid = this.globalData.openid
+                var newSession_key = this.globalData.sessionkey
+                console.log(newopenid)
+                console.log(newSession_key)
+                newSession_key = newSession_key.replace(/ +/g, '%2B')
+                newopenid = newopenid.replace(/ +/g, '%2B')
+                console.log('准备发送')
+                console.log(newopenid)
+                console.log(newSession_key)
+                var that = this
+                this.$axios.post(urlNew,{
+                    openid: newopenid,
+                    session_key: newSession_key,
+                    message: message
+                }).then(function (response) {
+                    console.log('成功');
+                    console.log(response);
+                    that.$toast.success('提交成功！')
+                    that.$router.push('/pages/usernear')
+                }).catch(function (error) {
+                    console.log('失败');
+                    console.log(error);
+                    that.$toast.success('提交失败！请检查网络')
+                    // that.send(message)
+                });
+
                 // var that = this
+                //
+                //
                 // ah.request({
                 //     //获取openid接口
                 //     url: '',

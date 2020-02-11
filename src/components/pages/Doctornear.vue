@@ -325,7 +325,38 @@
 
                 message = this.addOthersMsgWhenSend(message)
                 // this.$router.push('/pages/doctornear')
+                console.log('发送的数据：')
                 console.log(message)
+
+                var urlNew = this.globalData.Url.submitInfoUrl
+                var newopenid = this.globalData.openid
+                var newSession_key = this.globalData.sessionkey
+                console.log(newopenid)
+                console.log(newSession_key)
+                newSession_key = newSession_key.replace(/ +/g, '%2B')
+                newopenid = newopenid.replace(/ +/g, '%2B')
+                console.log('准备发送')
+                console.log(newopenid)
+                console.log(newSession_key)
+                var that = this
+                this.$axios.post(urlNew,{
+                    openid: newopenid,
+                    session_key: newSession_key,
+                    message: message
+                }).then(function (response) {
+                    console.log('成功');
+                    console.log(response);
+                    that.$toast.success('提交成功！')
+                    that.$router.push('/pages/scale')
+                }).catch(function (error) {
+                    console.log('失败');
+                    console.log(error);
+                    that.$toast.success('提交失败！请检查网络')
+                    // that.send(message)
+                });
+
+
+
                 // var urlNew = globalData.Url.submitInfoUrl
                 // this.$axios.get(urlNew, {
                 //     params: {
