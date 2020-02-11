@@ -56,7 +56,10 @@ var router = new VueRouter({
     { path: '/pages/userinfo', component: Userinfo },
     { path: '/pages/usernear', component: Usernear },
     { path: '/pages/scale', component: Scale },
-    { path: '/pages/servicedemand', component: ServiceDemand },
+    { path: '/pages/servicedemand', component: ServiceDemand,
+      meta: {
+        title: '心理健康服务需求'
+      }},
     { path: '/pages/intervene', component: Intervene },
     { path: '/pages/videoplay', component: VideoPlay }
   ]
