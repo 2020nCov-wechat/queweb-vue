@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vant, { Button ,RadioGroup, Radio,Toast,Popup,Picker,Icon ,Area,Checkbox, CheckboxGroup ,Field,Cell, CellGroup    } from 'vant'
+import Vant, { Button ,RadioGroup, Radio,Toast,Popup,Picker,Icon ,Area,Checkbox, CheckboxGroup ,Field,Cell, CellGroup} from 'vant'
 import 'vant/lib/index.css'
 Vue.use(Cell);
 Vue.use(CellGroup);

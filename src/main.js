@@ -14,6 +14,7 @@ import Scale from "./components/pages/Scale";
 import ServiceDemand from "./components/pages/ServiceDemand";
 import Intervene from "./components/pages/Intervene";
 import VideoPlay from "./components/pages/VideoPlay";
+import InitWelcome from "./components/pages/InitWelcome";
 Vue.prototype.$axios = axios;
 
 Vue.use(VueRouter)
@@ -27,7 +28,8 @@ VueRouter.prototype.push = function push(location) {
 var router = new VueRouter({
   routes: [
     // 动态路径参数 以冒号开头
-    { path: '/', redirect:'/pages/doctornear' },
+    { path: '/', redirect:'/index' },
+    { path: '/index', component:InitWelcome },
     { path: '/pages/first', component: First },
     { path: '/pages/my',component: My},
     { path: '/pages/doctorinfo', component: Doctorinfo },
@@ -40,7 +42,11 @@ var router = new VueRouter({
     { path: '/pages/videoplay', component: VideoPlay }
   ]
 })
+var sessionkey=''
+var openid=''
 new Vue({
   render: h => h(App),
   router,
+  sessionkey,
+  openid,
 }).$mount('#app')

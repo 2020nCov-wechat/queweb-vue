@@ -1,6 +1,6 @@
 <template>
     <div class='user'>
-        <div class='header bg-color acea-row row-between-wrapper '>
+        <div class='header bg-color acea-row row-between-wrapper-first '>
             <div class='header-have-arrow'>
                 <div class="header-out-style">
                     <div class='picTxt acea-row row-between-wrapper header-display '>
@@ -73,8 +73,9 @@
                         that.$router.push('/pages/userinfo')
                     }
                 },500)
-            }
-        }
+            },
+
+        },
     }
 </script>
 

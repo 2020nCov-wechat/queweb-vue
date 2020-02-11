@@ -1,4 +1,5 @@
 var headUrl = 'https://follwup.aiwac.net'
+
 var Url={
     checkUserUrl: headUrl + '/wechat/login/',
     getUserInfo: headUrl + '/wechat/user/info/',
@@ -14,6 +15,7 @@ var Url={
     submitNeed: headUrl + '/ncov/submitneed/',
     sendUnionUrl: headUrl + '/wechat/user/unionid/',
     getVideoUrl: 'https://cmas.aiwac.net/animations/',
+    wechatInitUrl:'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx3213c681fb752c01&redirect_uri=https%3A%2F%2Ffollwup.aiwac.net%2Fwechat%2Fuser%2Fdoctor_info&response_type=code&scope=snsapi_userinfo&state=100#wechat_redirect'
 }
 var openid=''
 var sessionkey=''
