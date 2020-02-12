@@ -3,7 +3,7 @@ import App from './App.vue'
 import './plugins/vant.js'
 import VueRouter from "vue-router";
 import axios from 'axios'
-import Vconsole from 'vconsole'
+// import Vconsole from 'vconsole'
 import globalData from './assets/js/commom'
 
 import First from "./components/pages/First";
@@ -37,8 +37,8 @@ Vue.prototype.$axios = axios;
 Vue.prototype.globalData = globalData;
 Vue.use(VueRouter)
 Vue.config.productionTip = false
-let vConsole = new Vconsole()
-Vue.use(vConsole)
+// let vConsole = new Vconsole()
+// Vue.use(vConsole)
 
 const originalPush = VueRouter.prototype.push
 VueRouter.prototype.push = function push(location) {

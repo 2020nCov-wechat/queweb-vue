@@ -145,10 +145,11 @@
                 <span >* 最近一周居住与工作状况回答完毕，请点击提交</span>
             </div>
             <!-- 多选 -->
-            <div class="warn-text" v-if="questionShow.type>=3&&questionShow.type<=4">
+            <div class="warn-text" v-if="questionShow.type>=3&&questionShow.type<=4 && questionShowIndex!=questionNum-1">
                 <span >* 本多选题回答完毕，请点击下一题</span>
             </div>
-            <div class="warn-text" v-if="questionShow.type==2">
+            <!-- 单选 -->
+            <div class="warn-text" v-if="questionShow.type==2 || questionShow.type==12 || questionShow.type==10 ||questionShow.type==9 || questionShow.type==8">
                 <span >* 本题回答完毕，请点击下一题</span>
             </div>
             <div class="btn-bottom">

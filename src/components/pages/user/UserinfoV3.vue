@@ -49,7 +49,7 @@
                                     <span style="font-size:20px;">{{job || "请点击我以选择职业"}}</span>
                                 </div>
                                 <van-popup  v-model="bottomJob" position="bottom" custom-style="height: 40%" bind:close="hideJobBottom">
-                                    <van-picker show-toolbar title="请选择民族" :columns="jobOption"   @cancel="onCancelJob"
+                                    <van-picker show-toolbar title="请选择职业" :columns="jobOption"   @cancel="onCancelJob"
                                                 @confirm="onConfirmJob" />
                                 </van-popup>
                             </div>
@@ -64,10 +64,11 @@
                 <span >* 基本信息回答完毕，请点击提交</span>
             </div>
             <!-- 多选 -->
-            <div class="warn-text" v-if="questionShow.type>=3&&questionShow.type<=4">
+            <div class="warn-text" v-if="questionShow.type>=3&&questionShow.type<=4 && questionShowIndex!=questionNum-1">
                 <span >* 本多选题回答完毕，请点击下一题</span>
             </div>
-            <div class="warn-text" v-if="questionShow.type==2">
+            <!-- 单选 -->
+            <div class="warn-text" v-if="questionShow.type==2 || questionShow.type==12 || questionShow.type==10 ||questionShow.type==9 || questionShow.type==8">
                 <span >* 本题回答完毕，请点击下一题</span>
             </div>
             <div class="btn-bottom">

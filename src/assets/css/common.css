@@ -14,7 +14,7 @@ body {
     position: absolute;
 }
 .user .header{
-    padding:20px 10px 0px 10px ;
+    padding:5px 10px 0px 10px ;
     position:relative;
 }
 .user .header:after { position: absolute;left: 0;right: 0;bottom: -98px ;z-index: -1;
