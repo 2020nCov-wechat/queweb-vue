@@ -328,7 +328,7 @@
                 console.log('发送的数据：')
                 console.log(message)
 
-                var urlNew = this.globalData.Url.submitInfoUrl
+                var urlNew = this.globalData.Url.submitRecentUrl
                 var newopenid = this.globalData.openid
                 var newSession_key = this.globalData.sessionkey
                 console.log(newopenid)

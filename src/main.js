@@ -36,35 +36,61 @@ var router = new VueRouter({
   routes: [
     // 动态路径参数 以冒号开头
     { path: '/', redirect:'/pages/first',
+      name:'firstindex',
       meta: {
         title: '2019-nCov心理健康评估'
       }},
     { path: '/pages/index', component:InitWelcome },
     { path: '/pages/first', component: First ,
+      name:'first',
       meta: {
         title: '2019-nCov心理健康评估'
       }},
-    { path: '/pages/my',component: My},
+    { path: '/pages/my',component: My,
+      name:'my',
+      meta: {
+        title: '2019-nCov心理健康评估'
+      }},
     { path: '/pages/doctorinfo', component: Doctorinfo ,
+      name:'doctorinfo',
       meta: {
         title: '医护人员基本信息'
       }},
     { path: '/pages/doctornear', component: Doctornear ,
+      name:'doctornear',
       meta: {
         title: '医护人员近况'
       }},
-    { path: '/pages/userinfo', component: Userinfo },
-    { path: '/pages/usernear', component: Usernear },
+    { path: '/pages/userinfo', component: Userinfo ,
+      name:'userinfo',
+      meta: {
+        title: '用户基本信息'
+      }},
+    { path: '/pages/usernear', component: Usernear ,
+      name:'usernear',
+      meta: {
+        title: '用户近况'
+      }},
     { path: '/pages/scale', component: Scale ,
+      name:'scale',
       meta: {
       title: '量表'
     }},
     { path: '/pages/servicedemand', component: ServiceDemand,
+      name:'servicedemand',
       meta: {
         title: '心理健康服务需求'
     }},
-    { path: '/pages/intervene', component: Intervene },
-    { path: '/pages/videoplay', component: VideoPlay }
+    { path: '/pages/intervene', component: Intervene ,
+      name:'intervene',
+      meta: {
+        title: '干预'
+      }},
+    { path: '/pages/videoplay', component: VideoPlay ,
+      name:'videoplay',
+      meta: {
+        title: '视频播放'
+      }},
   ]
 })
 router.beforeEach((to,from,next)=>{
