@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <Tabbar></Tabbar>
+    <Tabbar v-if="tabbarShow" ></Tabbar>
     <div class="empty"></div>
   </div>
 </template>
@@ -15,7 +15,24 @@ export default {
   },
   components:{
     Tabbar
+  },
+  data(){
+    return{
+      tabbarShow:true,
+    }
+  },
+  watch:{
+    $route(e){
+      if(e.name=="doctorinfo"||e.name=="doctornear"||e.name=="userinfo"||e.name=="usernear"||
+              e.name=="scale"||e.name=="servicedemand"||e.name=="videoplay"
+      ){
+        this.tabbarShow =false;
+      }else{
+        this.tabbarShow=true;
+      }
+    }
   }
+
 }
 </script>
 

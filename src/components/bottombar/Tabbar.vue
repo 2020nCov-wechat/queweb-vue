@@ -1,5 +1,5 @@
 <template>
-    <div class="tabberWarp" >
+    <div class="tabberWarp">
         <div class="warp">
             <Item :txt='item.txt' :page='item.page' @change='getVal' v-for='item in tabbarDes' :sel='selected' :key="item.txt">
 
@@ -28,7 +28,7 @@
                     },
                     {
                         txt:'干预',
-                        page:'pages/Intervene',
+                        page:'pages/intervene',
                         // page:'pages/scale',
                         normalImg:require('../../assets/imgs/bar/intervene1.png'),
                         activeImg:require('../../assets/imgs/bar/intervene.png')
@@ -46,7 +46,8 @@
             getVal:function(res){
                 this.selected = res;
             }
-        }
+        },
+
     }
 </script>
 <style type="text/css">
@@ -60,12 +61,12 @@
         font-size: 0;
     }
     .warp img{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
     .tabberWarp img{
         margin-top: 10px;
-        margin-bottom: 5px;
+        /*margin-bottom: 5px;*/
 
     }
     .tabberWarp{

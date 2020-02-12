@@ -49,7 +49,7 @@
                                     <span style="font-size:20px;">{{address || "请点击我以选择地址"}}</span>
                                 </div>
                                 <van-popup v-model="cityBottom" position="bottom" custom-style="height: 40%" bind:close="hideCityBottom">
-                                    <van-area value="value"  :area-list="areaList"
+                                    <van-area v-model="value"  :area-list="areaList"
                                               @cancel="onCancelCity"
                                               @confirm="onConfirmCity"/>
                                 </van-popup>
@@ -164,7 +164,7 @@
 
                 //地址
                 loading: false,
-                value: 420000,
+                value: '420000',
                 areaList: {
                     province_list: area.city.province_list ,
                     city_list: area.city.city_list,
@@ -328,7 +328,7 @@
                 console.log('发送的数据：')
                 console.log(message)
 
-                var urlNew = this.globalData.Url.submitInfoUrl
+                var urlNew = this.globalData.Url.submitRecentUrl
                 var newopenid = this.globalData.openid
                 var newSession_key = this.globalData.sessionkey
                 console.log(newopenid)
@@ -344,10 +344,12 @@
                     session_key: newSession_key,
                     message: message
                 }).then(function (response) {
-                    console.log('成功');
                     console.log(response);
-                    that.$toast.success('提交成功！')
-                    that.$router.push('/pages/scale')
+                    if(response.status=="200"){
+                        console.log('成功');
+                        that.$toast.success('提交成功！')
+                        that.$router.push('/pages/scale')
+                    }
                 }).catch(function (error) {
                     console.log('失败');
                     console.log(error);
@@ -593,6 +595,17 @@
 
             //其他函数
             backClick: function () {
+                var that = this
+                this.$dialog.confirm({
+                    title: '退出答题',
+                    message: '确认要退出答题吗？'
+                }).then(() => {
+                    // on confirm
+                    that.$router.push('/pages/first')
+                }).catch(() => {
+                    // on cancel
+                    console.log('点击取消回调')
+                });
                 // var that = this;
                 // wx.showModal({
                 //     title: '退出答题',

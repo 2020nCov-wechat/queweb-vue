@@ -18,15 +18,9 @@
         <div class='wrapper'>
 
             <div class='nav acea-row row-middle title-padding'>
-                <span class="hellotext">尊敬的一线医务工作者：</span>
-                <span class="hellotext">您好，首先感谢您为抗击新型冠状病毒肺炎做出的巨大贡献！
-            </span>
-                <span class="hellotext">病毒无情人有情。您在抗击新型冠状病毒时，我们也在关心着您的心理健康。本次问卷旨在为抗击新型冠状病毒中一线医务工作者提供心理健康评估，并依据结果为您提供个体化心理支持及干预方案，与您携手共度难关！
-            </span>
-                <span class="hellotext">本次调查问卷由武汉大学人民医院精神卫生中心、浙江大学医学院附属第一医院精神卫生中心、西安交通大学第一附属医院精神心理科、北京大学第六医院、华中科技大学计算机学院相关研究团队设计，为匿名问卷，请您按照您的情况如实填写，提交问卷后会有一个初步的报告供参考。您可以在任何时候中止或退出本次问卷调研。
-            </span>
-                <span class="hellotext">谢谢！
-            </span>
+                <div v-for="item in hello" v-bind:key="item.content">
+                    <div v-html="item.content" class="hellotext">{{item.content}}</div>
+                </div>
             </div>
             <div class="item_list">
                 <div class='myService'>
@@ -59,7 +53,24 @@
         name: "first",
         data(){
             return{
-                radio:1
+                radio:1,
+                hello:[
+                    {
+                        content:'尊敬的一线医务工作者：',
+                    },
+                    {
+                        content:'&nbsp;&nbsp;&nbsp;&nbsp;您好，首先感谢您为抗击新型冠状病毒肺炎做出的巨大贡献！',
+                    },
+                    {
+                        content:'&nbsp;&nbsp;&nbsp;&nbsp;病毒无情人有情。您在抗击新型冠状病毒时，我们也在关心着您的心理健康。本次问卷旨在为抗击新型冠状病毒中一线医务工作者提供心理健康评估，并依据结果为您提供个体化心理支持及干预方案，与您携手共度难关！',
+                    },
+                    {
+                        content:'&nbsp;&nbsp;&nbsp;&nbsp;本次调查问卷由武汉大学人民医院精神卫生中心、浙江大学医学院附属第一医院精神卫生中心、西安交通大学第一附属医院精神心理科、北京大学第六医院、华中科技大学计算机学院相关研究团队设计，为匿名问卷，请您按照您的情况如实填写，提交问卷后会有一个初步的报告供参考。您可以在任何时候中止或退出本次问卷调研。',
+                    },
+                    {
+                        content:'&nbsp;&nbsp;&nbsp;&nbsp;谢谢！',
+                    },
+                ]
             }
         },
         methods:{

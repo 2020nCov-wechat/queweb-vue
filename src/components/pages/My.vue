@@ -159,10 +159,10 @@ export default {
         openid: newopenid,
         session_key: newSession_key,
       }).then(function (response) {
-        console.log('成功');
         console.log(response);
-        that.$toast.success('刷新成功！')
         if(response.status=="200"){
+          console.log('成功');
+          // that.$toast.success('刷新成功！')
           var scaleResults = response.data.scaleResults
           setTimeout(() => {
             //未来让加载动画效果明显,这里加入了setTimeout,实现2s延时
