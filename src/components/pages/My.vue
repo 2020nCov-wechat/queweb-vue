@@ -30,7 +30,7 @@
         <div class='title acea-row row-middle'>指导意见</div>
         <div class="serviceList">
           <div class="serviceList">
-            <div class="suggess-css" v-for="item in advices" v-bind:key="item.title">
+            <div class="result-suggess-css" v-for="item in advices" v-bind:key="item.title">
               <span>{{item.title}}：{{item.level}}</span>
             </div>
           </div>
@@ -44,7 +44,7 @@
       <div class='wrapper'>
         <div class='copy-view'>
           <div class="copy-item">Software Support @ Huazhong</div>
-          <div class="copy-item">University ofScience and Technology,</div>
+          <div class="copy-item">University of Science and Technology,</div>
           <div class="copy-item">Embedded and Pervasive Computing (EPIC) Lab</div>
         </div>
       </div>
