@@ -27,14 +27,7 @@
 
                     },
                     {
-                        txt:'干预',
-                        page:'pages/intervene',
-                        // page:'pages/scale',
-                        normalImg:require('../../assets/imgs/bar/intervene1.png'),
-                        activeImg:require('../../assets/imgs/bar/intervene.png')
-                    },
-                    {
-                        txt:'我的',
+                        txt:'评估结果',
                         page:'pages/my',
                         normalImg:require('../../assets/imgs/bar/my1.png'),
                         activeImg:require('../../assets/imgs/bar/my.png')
