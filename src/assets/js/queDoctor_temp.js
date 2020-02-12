@@ -31,137 +31,11 @@ var que1 = {
             "type": 1,
             "question": "30.做事时提不起劲或没有兴趣",
             "answers": [{
-                "answer": "完全没有",
-                "value": 0
-            },
-                {
-                    "answer": "有几天",
-                    "value": 1
-                },
-                {
-                    "answer": "一半以上天数",
-                    "value": 2
-                },
-                {
-                    "answer": "几乎每天",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "question": "31.感到心情低落、沮丧或绝望",
-            "answers": [{
-                "answer": "完全没有",
-                "value": 0
-            },
-                {
-                    "answer": "有几天",
-                    "value": 1
-                },
-                {
-                    "answer": "一半以上天数",
-                    "value": 2
-                },
-                {
-                    "answer": "几乎每天",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "question": "32.入睡困难、睡不安稳或睡眠过多",
-            "answers": [{
-                "answer": "完全没有",
-                "value": 0
-            },
-                {
-                    "answer": "有几天",
-                    "value": 1
-                },
-                {
-                    "answer": "一半以上天数",
-                    "value": 2
-                },
-                {
-                    "answer": "几乎每天",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "question": "33.感觉疲倦或没有活力",
-            "answers": [{
-                "answer": "完全没有",
-                "value": 0
-            },
-                {
-                    "answer": "有几天",
-                    "value": 1
-                },
-                {
-                    "answer": "一半以上天数",
-                    "value": 2
-                },
-                {
-                    "answer": "几乎每天",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "question": "34.食欲不振或吃太多",
-            "answers": [{
-                "answer": "完全没有",
-                "value": 0
-            },
-                {
-                    "answer": "有几天",
-                    "value": 1
-                },
-                {
-                    "answer": "一半以上天数",
-                    "value": 2
-                },
-                {
-                    "answer": "几乎每天",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "question": "35.觉得自己很糟、很失败，或让自己、家人失望",
-            "answers": [{
-                "answer": "完全没有",
-                "value": 0
-            },
-                {
-                    "answer": "有几天",
-                    "value": 1
-                },
-                {
-                    "answer": "一半以上天数",
-                    "value": 2
-                },
-                {
-                    "answer": "几乎每天",
-                    "value": 3
-                }
-            ]
-        },
-        {
-            "type": 1,
-            "question": "36.对专注于做某件事情有困难，例如阅读报纸或看电视",
-            "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "有几天",
                     "value": 1
                 },
                 {
@@ -176,13 +50,139 @@ var que1 = {
         },
         {
             "type": 1,
-            "question": "37.行动或说话速度变得缓慢（或变得烦躁、坐立不安、动来动去等）已被周围人所察觉",
+            "question": "31.感到心情低落，沮丧或绝望",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "有几天",
+                    "value": 1
+                },
+                {
+                    "answer": "一半以上的天数",
+                    "value": 2
+                },
+                {
+                    "answer": "几乎每天",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": 1,
+            "question": "32.入睡困难，睡不安稳或睡眠过多",
+            "answers": [{
+                "answer": "完全不会",
+                "value": 0
+            },
+                {
+                    "answer": "有几天",
+                    "value": 1
+                },
+                {
+                    "answer": "一半以上的天数",
+                    "value": 2
+                },
+                {
+                    "answer": "几乎每天",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": 1,
+            "question": "33.感觉疲倦或没有活力",
+            "answers": [{
+                "answer": "完全不会",
+                "value": 0
+            },
+                {
+                    "answer": "有几天",
+                    "value": 1
+                },
+                {
+                    "answer": "一半以上的天数",
+                    "value": 2
+                },
+                {
+                    "answer": "几乎每天",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": 1,
+            "question": "34.食欲不振或吃太多",
+            "answers": [{
+                "answer": "完全不会",
+                "value": 0
+            },
+                {
+                    "answer": "有几天",
+                    "value": 1
+                },
+                {
+                    "answer": "一半以上的天数",
+                    "value": 2
+                },
+                {
+                    "answer": "几乎每天",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": 1,
+            "question": "35.觉得自己很糟、很失败，或让自己、家人失望",
+            "answers": [{
+                "answer": "完全不会",
+                "value": 0
+            },
+                {
+                    "answer": "有几天",
+                    "value": 1
+                },
+                {
+                    "answer": "一半以上的天数",
+                    "value": 2
+                },
+                {
+                    "answer": "几乎每天",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": 1,
+            "question": "36.对专注于某件事情有困难，例如阅读报纸或看电视",
+            "answers": [{
+                "answer": "完全不会",
+                "value": 0
+            },
+                {
+                    "answer": "有几天",
+                    "value": 1
+                },
+                {
+                    "answer": "一半以上的天数",
+                    "value": 2
+                },
+                {
+                    "answer": "几乎每天",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": 1,
+            "question": "37.行动或说话速度变得缓慢（或变得烦躁、坐立不安、动来动去等）已被周围人察觉",
+            "answers": [{
+                "answer": "完全不会",
+                "value": 0
+            },
+                {
+                    "answer": "有几天",
                     "value": 1
                 },
                 {
@@ -203,7 +203,7 @@ var que1 = {
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "有几天",
                     "value": 1
                 },
                 {
@@ -226,17 +226,17 @@ var que2 = {
     "questions": [
         {
             "type": 1,
-            "question": "39.感觉紧张，焦虑或急切",
+            "question": "1.感觉紧张，焦虑或急切",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "有几天",
+                    "answer": "几天",
                     "value": 1
                 },
                 {
-                    "answer": "超过一周",
+                    "answer": "一半以上的日子",
                     "value": 2
                 },
                 {
@@ -247,17 +247,17 @@ var que2 = {
         },
         {
             "type": 1,
-            "question": "40.不能够停止或控制担忧",
+            "question": "2.不能够停止或控制担忧",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "有几天",
+                    "answer": "几天",
                     "value": 1
                 },
                 {
-                    "answer": "超过一周",
+                    "answer": "一半以上的日子",
                     "value": 2
                 },
                 {
@@ -268,17 +268,17 @@ var que2 = {
         },
         {
             "type": 1,
-            "question": "41.对各种各样的事情担忧过多",
+            "question": "3.对各种各样的事情担忧过多",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "几天",
                     "value": 1
                 },
                 {
-                    "answer": "超过一周",
+                    "answer": "一半以上的日子",
                     "value": 2
                 },
                 {
@@ -289,17 +289,17 @@ var que2 = {
         },
         {
             "type": 1,
-            "question": "42.很难放松下来",
+            "question": "4.很难放松下来",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "几天",
                     "value": 1
                 },
                 {
-                    "answer": "超过一周",
+                    "answer": "一半以上的日子",
                     "value": 2
                 },
                 {
@@ -310,17 +310,17 @@ var que2 = {
         },
         {
             "type": 1,
-            "question": "43.由于不安而无法静坐",
+            "question": "5.由于不安而无法静坐",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "几天",
                     "value": 1
                 },
                 {
-                    "answer": "超过一周",
+                    "answer": "一半以上的日子",
                     "value": 2
                 },
                 {
@@ -331,17 +331,17 @@ var que2 = {
         },
         {
             "type": 1,
-            "question": "44.变得容易烦恼或急躁",
+            "question": "6.变得容易烦恼或急躁",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "几天",
                     "value": 1
                 },
                 {
-                    "answer": "超过一周",
+                    "answer": "一半以上的日子",
                     "value": 2
                 },
                 {
@@ -352,17 +352,17 @@ var que2 = {
         },
         {
             "type": 1,
-            "question": "45.感到似乎将有可怕的事情发生而害怕",
+            "question": "7.感到似乎将有可怕的事情发生而害怕",
             "answers": [{
                 "answer": "完全不会",
                 "value": 0
             },
                 {
-                    "answer": "好几天",
+                    "answer": "几天",
                     "value": 1
                 },
                 {
-                    "answer": "超过一周",
+                    "answer": "一半以上的日子",
                     "value": 2
                 },
                 {
@@ -376,12 +376,12 @@ var que2 = {
 
 var que3 = {
     "scaleTitle": "失眠严重指数",
-    "scaleBrief": "对于以下问题，请您选出近1个月以来最符合您的睡眠情况的数字。",
+    "scaleBrief": "对于以下问题，请您选出近1个月以来最符合您的睡眠情况的选项。",
     "qNum":7,
     "questions": [
         {
             "type": 7,
-            "question": "46.1 请描述您当前(或最近一周)失眠问题的严重程度----入睡困难",
+            "question": "1.入睡困难",
             "answers": [{
                 "answer": "无",
                 "value": 0
@@ -406,7 +406,7 @@ var que3 = {
         },
         {
             "type": 7,
-            "question": "46.2 请描述您当前(或最近一周)失眠问题的严重程度----睡眠维持困难",
+            "question": "2.睡眠维持困难",
             "answers": [{
                 "answer": "无",
                 "value": 0
@@ -431,7 +431,7 @@ var que3 = {
         },
         {
             "type": 7,
-            "question": "46.3 请描述您当前(或最近一周)失眠问题的严重程度----早醒",
+            "question": "3.早醒",
             "answers": [{
                 "answer": "无",
                 "value": 0
@@ -456,7 +456,7 @@ var que3 = {
         },
         {
             "type": 1,
-            "question": "47.对您目前的睡眠模式满意度",
+            "question": "4.对您目前的睡眠模式满意/不满意程度如何？",
             "answers": [{
                 "answer": "很满意",
                 "value": 0
@@ -466,7 +466,7 @@ var que3 = {
                     "value": 1
                 },
                 {
-                    "answer": "一般",
+                    "answer": "不太满意",
                     "value": 2
                 },
                 {
@@ -481,7 +481,7 @@ var que3 = {
         },
         {
             "type": 1,
-            "question": "48.您认为您的睡眠问题在多大程度上影响了你的日间功能（如日间疲劳、处理工作和日常事务的能力、注意力、记忆力、情绪等）",
+            "question": "5.您认为您的失眠在多大程度上影响了你的日间功能？（如日间疲劳、处理工作和日常事务的能力、注意力、记忆力、情绪等）",
             "answers": [{
                 "answer": "没有干扰",
                 "value": 0
@@ -506,7 +506,7 @@ var que3 = {
         },
         {
             "type": 1,
-            "question": "49.你的失眠问题影响了你的生活质量，你觉得在别人眼中你的失眠情况如何？",
+            "question": "6.你的失眠问题影响了你的生活质量，你觉得在别人眼中你的失眠情况如何？",
             "answers": [{
                 "answer": "没有",
                 "value": 0
@@ -531,7 +531,7 @@ var que3 = {
         },
         {
             "type": 1,
-            "question": "50.您对目前的睡眠问题的担心/痛苦程度如何？",
+            "question": "7.您对目前的睡眠问题的担心/痛苦程度如何？",
             "answers": [{
                 "answer": "没有",
                 "value": 0
@@ -559,12 +559,12 @@ var que3 = {
 
 var que4 = {
     "scaleTitle": "事件影响量表修订版",
-    "scaleBrief": "过去一月，经历了新冠肺炎疫情的您是否体验到下列困扰，请您仔细阅读每个题目，选择最能够形容每一种困扰对您影响的程度。请按照自己在最近7天之内的体验，说明这件事情对你有多大影响。",
+    "scaleBrief": "过去一月，经历了新冠肺炎疫情的您是否体验到下列困扰，请您仔细阅读每个题目，选择最能够形容每一种困扰对您影响的程度。那件事指新冠肺炎以及其引发的一系列烦恼的事情。请按照自己在最近7天之内的体验，说明这件事情对你有多大影响。",
     "qNum": 22,
     "questions": [
         {
             "type": 7,
-            "question": "51.任何与新冠肺炎相关的事物都会引发当时的感受。",
+            "question": "1.任何与新冠肺炎相关的事物都会引发当时的感受。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -589,7 +589,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "52.我很难安稳地一觉睡到天亮。",
+            "question": "2.我很难安稳地一觉睡到天亮。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -614,7 +614,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "53.别的东西也会让我想起肺炎。",
+            "question": "3.别的东西也会让我想起肺炎。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -639,7 +639,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "54.我感觉我易受刺激、易发怒。",
+            "question": "4.我感觉我易受刺激、易发怒。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -664,7 +664,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "55.每当想起肺炎或其他事情使我记起它的时候，我会尽量避免使自己心烦意乱。",
+            "question": "5.每当想起肺炎或其他事情使我记起它的时候，我会尽量避免使自己心烦意乱。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -689,7 +689,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "56.即使我不愿意去想肺炎疫情，也会想起它。",
+            "question": "6.即使我不愿意去想肺炎疫情时，也会想起它。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -714,7 +714,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "57.我感觉，肺炎疫情好像不是真的，或者从未发生过。",
+            "question": "7.我感觉，肺炎疫情好像不是真的，或者从未发生过。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -739,7 +739,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "58.我设法远离一切能使我记起肺炎疫情的事物。",
+            "question": "8.我设法远离一切能使我记起肺炎疫情的事物。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -764,7 +764,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "59.有关肺炎疫情的画面会在我的脑海中突然出现。",
+            "question": "9.有关肺炎疫情的画面会在我的脑海中突然出现。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -789,7 +789,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "60.我感觉自己神经过敏，易被惊吓。",
+            "question": "10.我感觉自己神经过敏，易被惊吓。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -814,7 +814,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "61.我努力不去想肺炎疫情。",
+            "question": "11.我努力不去想肺炎疫情。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -839,7 +839,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "62.我觉察到我对肺炎疫情仍有很多感受，但我没有去处理它们。",
+            "question": "12.我觉察到我对肺炎疫情仍有很多感受，但我没有去处理它们。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -864,7 +864,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "63.我对肺炎疫情的感觉有点麻木。",
+            "question": "13.我对肺炎疫情的感觉有点麻木。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -889,7 +889,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "64.我发现我的行为和感觉，好像又回到了肺炎疫情发生的时候那样。",
+            "question": "14.我发现我的行为和感觉，好像又回到了肺炎疫情发生的时候那样。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -914,7 +914,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "65.我难以入睡。",
+            "question": "15.我难以入睡。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -939,7 +939,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "66.我因肺炎疫情而有强烈的情感波动。",
+            "question": "16.我因肺炎疫情而有强烈的情感波动。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -964,7 +964,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "67.我想要忘掉肺炎疫情。",
+            "question": "17.我想要忘掉肺炎疫情。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -989,7 +989,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "68.我感觉自己难以集中注意力。",
+            "question": "18.我感觉自己难以集中注意力。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -1014,7 +1014,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "69.令我想起肺炎疫情的事物会引起我身体上的反应，如:出汗、呼吸困难、眩晕和心跳。",
+            "question": "19.令我想起肺炎疫情的事物会引起我身体上的反应，如:出汗、呼吸困难、眩晕和心跳。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -1039,7 +1039,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "70.我曾经梦到过肺炎疫情。",
+            "question": "20.我曾经梦到过肺炎疫情。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -1064,7 +1064,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "71.我感觉自己很警觉或很戒备。",
+            "question": "21.我感觉自己很警觉或很戒备。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -1089,7 +1089,7 @@ var que4 = {
         },
         {
             "type": 7,
-            "question": "72.我尽量不提肺炎疫情。",
+            "question": "22.我尽量不提肺炎疫情。",
             "answers": [{
                 "answer": "一点没有",
                 "value": 0
@@ -1122,7 +1122,7 @@ var que5 = {
     "questions": [
         {
             "type": 7,
-            "question": "73.我感到快乐",
+            "question": "1.我感到快乐",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1151,7 +1151,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "74.我的精力不止倾注于一个被助者",
+            "question": "2.我的精力不止倾注于一个被助者",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1180,7 +1180,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "75.能够帮助别人使我感到满足",
+            "question": "3.能够帮助别人使我感到满足",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1209,7 +1209,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "76.我感到与别人有联系",
+            "question": "4.我感到与别人有联系",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1238,7 +1238,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "77.我被意外的声音所惊吓",
+            "question": "5.我被意外的声音所惊吓",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1267,7 +1267,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "78.在帮助别人后我感受到鼓舞",
+            "question": "6.在帮助别人后我感受到鼓舞",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1296,7 +1296,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "79.作为一个助人者，我感到自己很难将自己个人生活与助人职业生活区分开来",
+            "question": "7.作为一个助人者，我感到自己很难将自己个人生活与助人职业生活区分开来",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1325,7 +1325,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "80.我所帮助的人创伤性经历使我失眠了",
+            "question": "8.我所帮助的人创伤性经历使我失眠了",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1354,7 +1354,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "81.我想我受被助者的创伤性经历影响了",
+            "question": "9.我想我受被助者的创伤性经历影响了",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1383,7 +1383,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "82.我被助人者这份工作束缚住了",
+            "question": "10.我被助人者这份工作束缚住了",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1412,7 +1412,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "83.由于我的助人者工作，我感到自己对很多事情都很紧张",
+            "question": "11.由于我的助人者工作，我感到自己对很多事情都很紧张",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1441,7 +1441,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "84.我喜欢助人者这份工作",
+            "question": "12.我喜欢助人者这份工作",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1470,7 +1470,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "85.从事助人者工作，让我感到压抑",
+            "question": "13.从事助人者工作，让我感到压抑",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1499,7 +1499,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "86.我感到自己在体验被助者的创伤",
+            "question": "14.我感到自己在体验被助者的创伤",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1528,7 +1528,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "87.我拥有可以支撑自己的信念",
+            "question": "15.我拥有可以支撑自己的信念",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1557,7 +1557,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "88.对于能够不断拥有助人者的技巧与方法，我感到高兴",
+            "question": "16.对于能够不断拥有助人者的技巧与方法，我感到高兴",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1586,7 +1586,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "89.我就是自己想要成为的那种人",
+            "question": "17.我就是自己想要成为的那种人",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1615,7 +1615,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "90.我的助人者工作让我感到很满足",
+            "question": "18.我的助人者工作让我感到很满足",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1644,7 +1644,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "91.由于从事助人者这份工作，我感到精疲力竭",
+            "question": "19.由于从事助人者这份工作，我感到精疲力竭",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1673,7 +1673,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "92.对于那些被助者以及我如何帮助他们，我有恰当的想法和感受",
+            "question": "20.对于那些被助者以及我如何帮助他们，我有恰当的想法和感受",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1702,7 +1702,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "93.对于我所要处理的工作量以及病（案）例数，我感到不堪重负",
+            "question": "21.对于我所要处理的工作量以及病（案）例数，我感到不堪重负",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1731,7 +1731,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "94.相信我的工作是有用的",
+            "question": "22.相信我的工作是有用的",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1760,7 +1760,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "95.我回避某些情景与活动，因为那会让我想起被助者的可怕经历",
+            "question": "23.我回避某些情景与活动，因为那会让我想起被助者的可怕经历",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1789,7 +1789,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "96.我为自己能够帮助别人感到骄傲",
+            "question": "24.我为自己能够帮助别人感到骄傲",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1818,7 +1818,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "97.由于我从事助人者工作，我经常会突然冒出令人恐惧的想法",
+            "question": "25.由于我从事助人者工作，我经常会突然冒出令人恐惧的想法",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1847,7 +1847,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "98.由于助人者这份工作，我陷入了困境",
+            "question": "26.由于助人者这份工作，我陷入了困境",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1876,7 +1876,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "99.我感到自己是一个成功的助人者",
+            "question": "27.我感到自己是一个成功的助人者",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1905,7 +1905,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "100.我不能回忆起与创伤性受害者工作的重要部分",
+            "question": "28.我不能回忆起与创伤性受害者工作的重要部分",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1934,7 +1934,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "101.我是一个非常敏感的人",
+            "question": "29.我是一个非常敏感的人",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -1963,7 +1963,7 @@ var que5 = {
         },
         {
             "type": 7,
-            "question": "102.我高兴能够选择助人者这份工作",
+            "question": "20.我高兴能够选择助人者这份工作",
             "answers": [{
                 "answer": "从没有",
                 "value": 0
@@ -2294,6 +2294,9 @@ var doctornear = {
                     "answer": "与家人居住",
                 },
                 {
+                    "answer": "与同事居住",
+                },
+                {
                     "answer": "与朋友同事居住",
                 },
                 {
@@ -2329,7 +2332,7 @@ var doctornear = {
                     "answer": "朋友",
                 },
                 {
-                    "answer": "您居住的小区、街道有确诊病例",
+                    "answer": "您居住的小区",
                 },
                 {
                     "answer": "无",
@@ -2509,14 +2512,14 @@ var doctornear = {
                     "answer": "8-12小时",
                 },
                 {
-                    "answer": "12小时以上",
+                    "answer": "大于12小时",
                 }]
         },
         {
             "type": 1, //7
             "question": "29. 请给您目前耗竭程度评个分？0-10分，0分无耗竭，10分严重耗竭",
             "answers": [{
-                "answer": "无耗竭",
+                "answer": "0(无耗竭)",
                 "value": 0
             },
                 {
@@ -2536,7 +2539,7 @@ var doctornear = {
                     "value": 4
                 },
                 {
-                    "answer": "中度耗竭",
+                    "answer": "5(中度耗竭)",
                     "value": 5
                 },
                 {
@@ -2556,7 +2559,7 @@ var doctornear = {
                     "value": 9
                 },
                 {
-                    "answer": "重度耗竭",
+                    "answer": "10(重度耗竭)",
                     "value": 10
                 }]
         }
@@ -2717,12 +2720,12 @@ var usernear = {
     ]
 }
 var quefour = {
-    "qNum":6,
+    "qNum":7,
     "questions": [
 
         {
             "type": 1,
-            "question": "103. 总的来说，您认为您的健康状况是：",
+            "question": "1. 总的来说，您认为您的健康状况是：",
             "answers": [{
                 "answer": "好",
             },
@@ -2737,7 +2740,7 @@ var quefour = {
         },
         {
             "type": 1,
-            "question": "104. 和疫情发生前相比较，您认为您目前的健康状况大致如何？",
+            "question": "2. 和疫情发生前相比较，您认为您目前的健康状况大致如何？",
             "answers": [{
                 "answer": "变好了",
             },
@@ -2754,7 +2757,7 @@ var quefour = {
         },
         {
             "type": 4,//4
-            "question": "105. 您在此次新冠肺炎疫情发生后，曾经得到过哪些心理上的帮助？[多选题]",
+            "question": "3. 您在此次新冠肺炎疫情发生后，曾经得到过哪些心理上的帮助？[多选]",
             "answers": [{
                 "answer": "收到关于心理方面的宣传材料",
             },
@@ -2765,13 +2768,10 @@ var quefour = {
                     "answer": "团体心理辅导",
                 },
                 {
-                    "answer": "个体心理辅导",
-                },
-                {
                     "answer": "心理治疗",
                 },
                 {
-                    "answer": "没获得任何帮助",
+                    "answer": "没获得过任何帮助",
                 },
                 {
                     "answer": "其他",
@@ -2780,7 +2780,7 @@ var quefour = {
         },
         {
             "type": 4,//4
-            "question": "106. 您希望接下来获得怎样的心理干预内容？[多选题]",
+            "question": "4. 您希望接下来获得怎样的心理干预内容？[多选]",
             "answers": [{
                 "answer": "常见的心理反应",
             },
@@ -2791,7 +2791,7 @@ var quefour = {
                     "answer": "如何帮助别人缓解心理反应",
                 },
                 {
-                    "answer": "如何寻求专业心理人员的帮助",
+                    "answer": "如何寻求专业心理咨询人员的帮助",
                 },
                 {
                     "answer": "不感兴趣",
@@ -2803,7 +2803,7 @@ var quefour = {
         },
         {
             "type": 3,//3
-            "question": "107.您希望接下来通过何种方式获得心理干预？[多选题]",
+            "question": "5.您希望接下来通过何种方式获得心理干预？[多选]",
             "answers": [{
                 "answer": "心理评估或诊断",
             },
@@ -2835,7 +2835,7 @@ var quefour = {
         },
         {
             "type": 1,
-            "question": "108. 在做好防护的情况下，如果有关机构开展针对此次疫情的心理健康教育活动，如讲座、咨询等，您愿意参加吗？",
+            "question": "6. 在做好防护的情况下，如果有关机构开展针对此次疫情的心理健康教育活动如讲座、咨询等，您愿意参加吗？",
             "answers": [{
                 "answer": "愿意",
             },

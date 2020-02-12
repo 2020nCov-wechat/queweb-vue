@@ -17,6 +17,19 @@ import ServiceDemand from "./components/pages/ServiceDemand";
 import Intervene from "./components/pages/Intervene";
 import VideoPlay from "./components/pages/VideoPlay";
 import InitWelcome from "./components/pages/InitWelcome";
+import Close from "./components/pages/Close";
+
+import FirstV2 from "./components/pages/doctor/FirstV2";
+import DoctorinfoV2 from "./components/pages/doctor/DoctorinfoV2";
+import DoctornearV2 from "./components/pages/doctor/DoctornearV2";
+import ScaleV2 from "./components/pages/doctor/ScaleV2";
+import ServiceDemandV2 from "./components/pages/doctor/ServiceDemandV2";
+
+import FirstV3 from "./components/pages/user/FirstV3";
+import UserinfoV3 from "./components/pages/user/UserinfoV3";
+import UsernearV3 from "./components/pages/user/UsernearV3";
+import ScaleV3 from "./components/pages/user/ScaleV3";
+import ServiceDemandV3 from "./components/pages/user/ServiceDemandV3";
 
 axios.defaults.timeout = 50000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
@@ -35,7 +48,7 @@ VueRouter.prototype.push = function push(location) {
 var router = new VueRouter({
   routes: [
     // 动态路径参数 以冒号开头
-    { path: '/', redirect:'/pages/first',
+    { path: '/', redirect:'/pages/firstV2',
       name:'firstindex',
       meta: {
         title: '2019-nCov心理健康评估'
@@ -90,6 +103,66 @@ var router = new VueRouter({
       name:'videoplay',
       meta: {
         title: '视频播放'
+      }},
+    { path: '/pages/close', component: Close ,
+      name:'close',
+      meta: {
+        title: '2019-nCov心理健康评估'
+      }},
+
+
+    //医护人员第二版
+    { path: '/pages/firstV2', component: FirstV2 ,
+      name:'firstV2',
+      meta: {
+        title: '2019-nCov心理健康评估'
+      }},
+    { path: '/pages/doctorinfoV2', component: DoctorinfoV2 ,
+      name:'doctorinfoV2',
+      meta: {
+        title: '医护人员基本信息'
+      }},
+    { path: '/pages/doctornearV2', component: DoctornearV2 ,
+      name:'doctornearV2',
+      meta: {
+        title: '医护人员近况'
+      }},
+    { path: '/pages/scaleV2', component: ScaleV2 ,
+      name:'scaleV2',
+      meta: {
+        title: '量表'
+      }},
+    { path: '/pages/servicedemandV2', component: ServiceDemandV2,
+      name:'servicedemandV2',
+      meta: {
+        title: '心理健康服务需求'
+      }},
+
+    //大众版
+    { path: '/pages/firstV3', component: FirstV3 ,
+      name:'firstV3',
+      meta: {
+        title: '2019-nCov心理健康评估'
+      }},
+    { path: '/pages/userinfoV3', component: UserinfoV3 ,
+      name:'userinfoV3',
+      meta: {
+        title: '用户基本信息'
+      }},
+    { path: '/pages/usernearV3', component: UsernearV3 ,
+      name:'usernearV3',
+      meta: {
+        title: '用户近况'
+      }},
+    { path: '/pages/scaleV3', component: ScaleV3 ,
+      name:'scaleV3',
+      meta: {
+        title: '量表'
+      }},
+    { path: '/pages/servicedemandV3', component: ServiceDemandV3,
+      name:'servicedemandV3',
+      meta: {
+        title: '心理健康服务需求'
       }},
   ]
 })

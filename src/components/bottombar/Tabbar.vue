@@ -21,7 +21,7 @@
                 tabbarDes:[
                     {
                         txt:'心理评估',
-                        page:'pages/first',
+                        page:'pages/firstV2',
                         normalImg:require('../../assets/imgs/bar/first1.png'),
                         activeImg:require('../../assets/imgs/bar/first.png')
 
