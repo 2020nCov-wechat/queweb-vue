@@ -21,13 +21,15 @@
         <div class="bottom-view ">
             <div class='wrapper'>
                 <div class='copy-view'>
-                    <div class="copy-item">Software Support @ Huazhong</div>
-                    <div class="copy-item">University ofScience and Technology,</div>
-                    <div class="copy-item">Embedded and Pervasive Computing (EPIC) Lab</div>
+                        <div class='copy-view'>
+                            <div class="copy-item">Software Support @ Huazhong</div>
+                            <div class="copy-item">University ofScience and Technology,</div>
+                            <div class="copy-item">Embedded and Pervasive Computing (EPIC) Lab</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </template>
 <script>
     export default {
@@ -93,7 +95,6 @@
                     console.log(response);
                     that.$toast.success('刷新成功！')
                     if(response.status=="200"){
-
                         that.setData({
                             // chart: response.data.data,
                             // level: response.data.level,
@@ -160,7 +161,5 @@
         // }
 
     };
-
-
 
 </script>
