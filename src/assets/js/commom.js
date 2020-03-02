@@ -21,9 +21,11 @@ var Url={
 var openid='oh0BSwb0u-9VtdA1YnKBNs__o47g'
 var sessionkey='30_ednZs7X-lMGK5z5kEVhATdSbxlFvlQyLMywbBqd06Z-uawwZkHf0Wfv5C4rR2xIsISktYxg3UlwS_amXc2PrZXI28a5Xx82rF-xinlJRfJw'
 var id=''
+var doctorOrPopulace = 0
 module.exports = {
     Url: Url,
     openid:openid,
     sessionkey:sessionkey,
-    id:id
+    id:id,
+    doctorOrPopulace:doctorOrPopulace
 }

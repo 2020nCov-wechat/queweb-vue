@@ -49,7 +49,7 @@
 
 
 <script>
-
+    var identityKey='storeIdnetity'//value:1 医护 2 大众
     export default {
         name: "first",
         data(){
@@ -97,7 +97,7 @@
                     title:'2019-NCP大众版',
                     hello: [
                         {
-                            content:'亲爱的居民：',
+                            content:'尊敬的用户：',
                         },
                         {
                             content:'&nbsp;&nbsp;&nbsp;&nbsp;您好，首先感谢您对此项问卷调查的支持。 ',
@@ -121,7 +121,9 @@
                 var that = this
                 setTimeout(function () {
                     if(data==1){
-                        if(that.globalData.id!=null&&(that.globalData.id=="1" ||that.globalData.id=="2"||that.globalData.id=="3")){
+                        var oldOriId = localStorage.getItem(identityKey)
+                        if(oldOriId!=null && oldOriId=="2"){
+                        // if(that.globalData.id!=null&&(that.globalData.id=="1" ||that.globalData.id=="2"||that.globalData.id=="3")){
                             that.$router.push('/pages/userinfoV3')
                         }else{
                             that.$router.push('/pages/doctorinfoV2')
@@ -154,7 +156,49 @@
                 }
             }
         },
-        created() {
+        created(){
+
+            var isOri = this.GetUrlParam('orderId')
+            if(isOri!=""){
+                console.log("save isOri")
+                localStorage.setItem(identityKey,isOri[0])
+                console.log(isOri[0])
+            }
+            var openid =  this.GetUrlParam('openid')
+            var sessionkey = this.GetUrlParam('sessionkey')
+            var doctortype = this.GetUrlParam('doctortype')
+            // var id = this.GetUrlParam('id')[0]
+            console.log(openid)
+            // console.log(id)
+            console.log(sessionkey)
+            console.log(doctortype)
+            if(openid == null || openid==""){
+                window.location.href =this.globalData.Url.wechatInitUrl
+                console.log("jump")
+            }else{
+                this.globalData.openid = openid
+                this.globalData.sessionkey = sessionkey
+                if(doctortype!=null&&doctortype!=""){
+                    this.globalData.id=doctortype[0]
+                    console.log("set id")
+                }
+                var oldOriId = localStorage.getItem(identityKey)
+                if(oldOriId!=null && oldOriId=="2"){
+                    console.log("大众版")
+                    this.title=this.user.title
+                    this.hello=this.user.hello
+                }else{
+                    console.log("医护版")
+                    this.title=this.doctor.title
+                    this.hello=this.doctor.hello
+                }
+            }
+
+
+
+
+        },
+        /*created() {
             var openid =  this.GetUrlParam('openid')
             var sessionkey = this.GetUrlParam('sessionkey')
             var doctortype = this.GetUrlParam('doctortype')
@@ -184,7 +228,7 @@
                     this.hello=this.doctor.hello
                 }
             }
-        }
+        }*/
     }
 </script>
 
