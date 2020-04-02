@@ -439,7 +439,8 @@
                     if(response.status=="200"){
                         console.log(response);
                         that.$toast.success('提交成功！')
-                        that.$router.push('/pages/my')
+                        // that.$router.push('/pages/my')
+                        that.$router.push('/pages/advice')
                     }
                 }).catch(function (error) {
                     console.log('失败');

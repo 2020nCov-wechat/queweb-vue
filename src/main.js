@@ -30,6 +30,8 @@ import UserinfoV3 from "./components/pages/user/UserinfoV3";
 import UsernearV3 from "./components/pages/user/UsernearV3";
 import ScaleV3 from "./components/pages/user/ScaleV3";
 import ServiceDemandV3 from "./components/pages/user/ServiceDemandV3";
+import Advice from "./components/pages/Advice";
+
 
 axios.defaults.timeout = 50000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
@@ -163,6 +165,11 @@ var router = new VueRouter({
       name:'servicedemandV3',
       meta: {
         title: '心理健康服务需求'
+      }},
+    { path: '/pages/advice', component: Advice,
+      name:'advice',
+      meta: {
+        title: '感受'
       }},
   ]
 })
